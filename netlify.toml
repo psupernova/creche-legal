@@ -1,0 +1,25 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+  VITE_GOOGLE_MAPS_API_KEY = "AIzaSyCIjF9IYEbbLblKUayFDV2L7o-kXo6qafo"
+  VITE_FIREBASE_API_KEY = "AIzaSyAlL2URIGX-Co3cupoR4uoNuh31n5s7XLQ"
+  VITE_FIREBASE_AUTH_DOMAIN = "teste-8bdfa.firebaseapp.com"
+  VITE_FIREBASE_DATABASE_URL = "https://teste-8bdfa-default-rtdb.firebaseio.com"
+  VITE_FIREBASE_PROJECT_ID = "teste-8bdfa"
+  VITE_FIREBASE_STORAGE_BUCKET = "teste-8bdfa.firebasestorage.app"
+  VITE_FIREBASE_MESSAGING_SENDER_ID = "18367717597"
+  VITE_FIREBASE_APP_ID = "1:18367717597:web:9cd7518eec39595ba1fb34"
+  VITE_FIREBASE_MEASUREMENT_ID = "G-20MJHNZ9CB"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[dev]
+  command = "npm run dev"
+  port = 3000
+  publish = "dist"
